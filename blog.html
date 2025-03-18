@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voyatech - Blog</title>
-    <meta name="description" content="Stay updated with the latest in web development, cybersecurity, and IT solutions through the Voyatech blog.">
+    <title>VOYATECH - Blog</title>
+    <meta name="description" content="Stay updated with the latest news and articles from Voyatech.">
     <link rel="icon" type="image/png" href="logo2.png">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-	
 </head>
 <body class="bg-gray-100 text-gray-900">
     <nav class="bg-gray-700 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
             <h1 class="text-xl font-bold flex items-center">
                 <img src="logo.png" alt="Logo" class="w-8 h-8 mr-2"> VOYATECH
             </h1>
-            <ul class="flex space-x-4">
+            <ul class="flex space-x-4 mt-4 md:mt-0">
                 <li><a href="index.html" class="hover:underline">Home</a></li>
                 <li><a href="about.html" class="hover:underline">About</a></li>
                 <li><a href="services.html" class="hover:underline">Services</a></li>
@@ -26,28 +25,35 @@
         </div>
     </nav>
 
-    <section class="container mx-auto p-8" id="blog">
-        <h2 class="text-3xl font-bold text-center">Our Blog</h2>
-        <p class="text-center mt-4">Stay updated with the latest in web development, cybersecurity, and IT solutions.</p>
-        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <article class="bg-white p-6 shadow-lg rounded-lg">
-                <h3 class="text-xl font-semibold">Cybersecurity Trends 2024</h3>
-                <p class="mt-2 text-gray-700">Learn about the latest threats and how to protect your business.</p>
+    <header class="bg-gray-500 text-white text-center py-16" id="home">
+        <h1 class="text-4xl font-bold">Blog</h1>
+        <p class="mt-4 text-lg">Stay updated with the latest news and articles from Voyatech.</p>
+    </header>
+
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold">Latest Posts</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Blog Post 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Title of Blog Post 1</h3>
+                <p class="mt-2">Brief description of blog post 1...</p>
                 <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
-            </article>
-            <article class="bg-white p-6 shadow-lg rounded-lg">
-                <h3 class="text-xl font-semibold">Optimizing Your Website</h3>
-                <p class="mt-2 text-gray-700">Tips to improve speed, SEO, and user experience.</p>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Title of Blog Post 2</h3>
+                <p class="mt-2">Brief description of blog post 2...</p>
                 <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
-            </article>
-            <article class="bg-white p-6 shadow-lg rounded-lg">
-                <h3 class="text-xl font-semibold">Why Cloud Security Matters</h3>
-                <p class="mt-2 text-gray-700">Best practices for securing your cloud infrastructure.</p>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Title of Blog Post 3</h3>
+                <p class="mt-2">Brief description of blog post 3...</p>
                 <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
-            </article>
+            </div>
         </div>
     </section>
-    
+
     <footer class="bg-gray-700 text-white text-center py-4 mt-8">
         <p>© 2024 Voyatech. All Rights Reserved.</p>
     </footer>

@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voyatech - Contact</title>
-    <meta name="description" content="Contact Voyatech for inquiries about our services or any other questions you may have.">
+    <title>VOYATECH - Contact</title>
+    <meta name="description" content="Get in touch with Voyatech. Contact us for any inquiries or support.">
     <link rel="icon" type="image/png" href="logo2.png">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
     <nav class="bg-gray-700 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
             <h1 class="text-xl font-bold flex items-center">
                 <img src="logo.png" alt="Logo" class="w-8 h-8 mr-2"> VOYATECH
             </h1>
-            <ul class="flex space-x-4">
+            <ul class="flex space-x-4 mt-4 md:mt-0">
                 <li><a href="index.html" class="hover:underline">Home</a></li>
                 <li><a href="about.html" class="hover:underline">About</a></li>
                 <li><a href="services.html" class="hover:underline">Services</a></li>
@@ -25,30 +25,45 @@
         </div>
     </nav>
 
-    <section class="container mx-auto p-8" id="contact">
-        <h2 class="text-3xl font-bold text-center">Contact Us</h2>
-        <p class="text-center mt-4">Have questions? Reach out to us!</p>
-        <form class="mt-8 max-w-lg mx-auto bg-white p-6 shadow-lg rounded-lg">
+    <header class="bg-gray-500 text-white text-center py-16" id="home">
+        <h1 class="text-4xl font-bold">Contact Us</h1>
+        <p class="mt-4 text-lg">Get in touch with us for any inquiries or support.</p>
+    </header>
+
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold">Contact Information</h2>
+        <p class="mt-4 text-lg">We'd love to hear from you! Reach out to us through any of the following methods:</p>
+        
+        <h3 class="text-2xl font-bold mt-8">Email</h3>
+        <p class="mt-2">info@voyatech.com</p>
+        
+        <h3 class="text-2xl font-bold mt-8">Phone</h3>
+        <p class="mt-2">+123 456 7890</p>
+        
+        <h3 class="text-2xl font-bold mt-8">Address</h3>
+        <p class="mt-2">123 Tech Avenue, Silicon Valley, CA</p>
+        
+        <h3 class="text-2xl font-bold mt-8">Contact Form</h3>
+        <form action="#" method="POST" class="mt-4">
             <div class="mb-4">
-                <label class="block font-semibold">Name</label>
-                <input type="text" class="w-full p-2 border rounded-lg" placeholder="Your Name" required>
+                <label for="name" class="block text-lg font-medium">Name</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-md">
             </div>
             <div class="mb-4">
-                <label class="block font-semibold">Email</label>
-                <input type="email" class="w-full p-2 border rounded-lg" placeholder="Your Email" required>
+                <label for="email" class="block text-lg font-medium">Email</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-md">
             </div>
             <div class="mb-4">
-                <label class="block font-semibold">Message</label>
-                <textarea class="w-full p-2 border rounded-lg" placeholder="Your Message" required></textarea>
+                <label for="message" class="block text-lg font-medium">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
             </div>
-            <button class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800">Send Message</button>
+            <button type="submit" class="bg-gray-700 text-white px-4 py-2 rounded-md">Send</button>
         </form>
     </section>
-    
+
     <footer class="bg-gray-700 text-white text-center py-4 mt-8">
         <p>© 2024 Voyatech. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-
 </body>
 </html>
